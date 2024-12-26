@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Effect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Kustom Parallax Effect */
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- Section 1 -->
+  <div class="relative h-screen parallax" style="background-image: url('./img/copi.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold">Welcome to Our Website</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-2xl">Your journey to explore amazing features starts here. Join us
+                and make a difference!</p>
+            <div class="mt-6 flex space-x-4">
+                <a href="#"
+                    class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow text-white text-lg font-medium">Get
+                    Started</a>
+                <a href="#"
+                    class="bg-gray-700 hover:bg-gray-800 px-6 py-3 rounded-lg shadow text-white text-lg font-medium">Learn
+                    More</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="p-16 bg-gray-100 text-center">
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Our Features</h2>
+            <p class="mt-2 text-gray-600">Explore the benefits of using our platform.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                <!-- Feature 1 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full mb-4">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Fast Performance</h3>
+                    <p class="mt-2 text-gray-600">Experience blazing fast speeds with our optimized platform.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full mb-4">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16s1.5-2 8-2 8 2 8 2M9 9h.01M15 9h.01M12 3a9 9 0 00-9 9 9 9 0 0018 0 9 9 0 00-9-9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">User Friendly</h3>
+                    <p class="mt-2 text-gray-600">An intuitive and easy-to-use interface for everyone.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full mb-4">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 10h11M9 21V3m4 18v-7H5v7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">Scalable Solutions</h3>
+                    <p class="mt-2 text-gray-600">Scale effortlessly as your business grows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  </div>
+
+  <!-- Section 3 -->
+  <div class="relative h-screen parallax" style="background-image: url('./img/copi.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h1 class="text-5xl md:text-7xl text-white font-bold">Another Parallax Section</h1>
+    </div>
+  </div>
+
+    <!-- Card -->
+    <section class="card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="img/copi.jpg" alt="Card Image">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Card Title 1</h2>
+                        <p class="text-gray-600 mt-2">Brief description of the card content.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="img/copi.jpg" alt="Card Image">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Card Title 2</h2>
+                        <p class="text-gray-600 mt-2">Brief description of the card content.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="img/copi.jpg" alt="Card Image">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold text-gray-800">Card Title 3</h2>
+                        <p class="text-gray-600 mt-2">Brief description of the card content.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Card -->
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    
+    <div class="grid grid-cols-2 gap-4 w-4/5">
+        <!-- Form Pemesanan 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Form Pemesanan 1</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name1" class="block text-sm font-medium text-gray-600">Nama</label>
+                    <input id="name1" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Nama lengkap">
+                </div>
+                <div class="mb-4">
+                    <label for="email1" class="block text-sm font-medium text-gray-600">Email</label>
+                    <input id="email1" type="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Email aktif">
+                </div>
+                <div class="mb-4">
+                    <label for="product1" class="block text-sm font-medium text-gray-600">Pilih Produk</label>
+                    <select id="product1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="produk1">Produk 1</option>
+                        <option value="produk2">Produk 2</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">Pesan</button>
+            </form>
+        </div>
+
+        <!-- Form Pemesanan 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Form Pemesanan 2</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name2" class="block text-sm font-medium text-gray-600">Nama</label>
+                    <input id="name2" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Nama lengkap">
+                </div>
+                <div class="mb-4">
+                    <label for="email2" class="block text-sm font-medium text-gray-600">Email</label>
+                    <input id="email2" type="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Email aktif">
+                </div>
+                <div class="mb-4">
+                    <label for="product2" class="block text-sm font-medium text-gray-600">Pilih Produk</label>
+                    <select id="product2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="produk1">Produk A</option>
+                        <option value="produk2">Produk B</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">Pesan</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-4">
+
+        <!-- Form Pemesanan -->
+        <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-1/2 mx-auto">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Form Pemesanan</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Nama Pemesan</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200"
+                        placeholder="Masukkan nama Anda" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="menu" class="block text-gray-700 font-medium mb-2">Pilih Menu</label>
+                    <select id="menu" name="menu"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200">
+                        <option value="Nasi Goreng">Nasi Goreng</option>
+                        <option value="Mie Ayam">Mie Ayam</option>
+                        <option value="Sate Ayam">Sate Ayam</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label for="quantity" class="block text-gray-700 font-medium mb-2">Jumlah</label>
+                    <input type="number" id="quantity" name="quantity"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200"
+                        placeholder="Masukkan jumlah" min="1" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="notes" class="block text-gray-700 font-medium mb-2">Catatan</label>
+                    <textarea id="notes" name="notes"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200"
+                        placeholder="Tambahkan catatan (opsional)"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600">Pesan
+                    Sekarang</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
