@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Login Page
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="flex w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="w-full md:w-1/2 p-8">
+            <div class="flex items-center justify-between">
+                <img alt="TheCubeFactory logo" class="h-10" height="40"
+                    src="https://storage.googleapis.com/a1aa/image/HfYvZQ3MGPzVf0eqEITKHaMqmNoTI88YK9uzfmGklQU3WPAQB.jpg"
+                    width="40" />
+                <h2 class="text-2xl font-semibold text-gray-700">
+                    TheCubeFactory
+                </h2>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-700 mt-6">
+                Welcome back
+            </h2>
+            <p class="text-gray-600">
+                Please enter your details
+            </p>
+            <form class="mt-4">
+                <div>
+                    <label class="block text-gray-700">
+                        Email address
+                    </label>
+                    <input
+                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-purple-600"
+                        placeholder="Email address" type="email" />
+                </div>
+                <div class="mt-4">
+                    <label class="block text-gray-700">
+                        Password
+                    </label>
+                    <input
+                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-purple-600"
+                        placeholder="Password" type="password" />
+                </div>
+                <div class="flex items-center justify-between mt-4">
+                    <label class="flex items-center">
+                        <input class="form-checkbox text-purple-600" type="checkbox" />
+                        <span class="ml-2 text-gray-700">
+                            Remember for 30 days
+                        </span>
+                    </label>
+                    <a class="text-sm text-purple-600 hover:underline" href="#">
+                        Forgot password?
+                    </a>
+                </div>
+                <div class="mt-6">
+                    <button
+                        class="w-full px-4 py-2 text-white bg-purple-600 rounded-md hover:bg-purple-700 focus:outline-none focus:bg-purple-700">
+                        Sign in
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button
+                        class="w-full px-4 py-2 text-gray-700 bg-white border rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100 flex items-center justify-center">
+                        <i class="fab fa-google mr-2">
+                        </i>
+                        Sign in with Google
+                    </button>
+                </div>
+            </form>
+            <p class="mt-8 text-center text-gray-600">
+                Don't have an account?
+                <a class="text-purple-600 hover:underline" href="#">
+                    Sign up
+                </a>
+            </p>
+        </div>
+        <div class="hidden md:block md:w-1/2 bg-purple-600">
+            <img alt="Illustration of a person with various icons in the background" class="object-cover w-full h-full"
+                height="800"
+                src="https://storage.googleapis.com/a1aa/image/9SNDPPQDn1LPC1aePTe1eUiFflh9oT2yQZMUGvJie32zteAAF.jpg"
+                width="600" />
+        </div>
+    </div>
+</body>
+
+</html>
