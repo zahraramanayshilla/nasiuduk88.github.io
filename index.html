@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/Logo.jpeg" type="image" class="rounded-full">
+    <link rel="shortcut icon" class="rounded-full" href="img/Logo.jpeg" type="image">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Nasi Uduk 88 Brebes Berhias</title>
@@ -46,7 +46,7 @@
                     <a href="#" class="text-gray-800 hover:text-blue-600">Beranda</a>
                     <a href="#about" class="text-gray-800 hover:text-blue-600">Tentang kami</a>
                     <a href="#" class="text-gray-800 hover:text-blue-600">Services</a>
-                    <a href="#" class="text-gray-800 hover:text-blue-600">Kontak</a>
+                    <a href="#kontak" class="text-gray-800 hover:text-blue-600">Kontak</a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
@@ -63,9 +63,9 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 rounded-lg shadow-md">
             <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Beranda</a>
-            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tentang kami</a>
+            <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tentang kami</a>
             <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Services</a>
-            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Kontak</a>
+            <a href="#kontak" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Kontak</a>
         </div>
     </nav>
 
@@ -101,7 +101,8 @@
                         class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow text-white text-lg font-medium">Pesan
                         Sekarang</a>
                     <a href="login.html"
-                        class="bg-gray-700 hover:bg-gray-800 px-6 py-3 rounded-lg shadow text-white text-lg font-medium">Sign In</a>
+                        class="bg-gray-700 hover:bg-gray-800 px-6 py-3 rounded-lg shadow text-white text-lg font-medium">Sign
+                        In</a>
                 </div>
             </div>
         </div>
@@ -111,20 +112,19 @@
     <div class="p-16 bg-gray-100 ">
 
         <!-- about -->
-        <section class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 px-4 md:px-16 py-12" id="about">
+        <section class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 px-4 md:px-16 py-12"
+            id="about">
             <!-- Teks di Kiri -->
             <div class="md:w-1/2">
                 <h1 class="text-4xl font-bold text-gray-800 mb-6">About Us</h1>
                 <p class="text-lg text-gray-600 leading-relaxed">
-                    ✨ About Nasi Uduk 88 Brebes ✨
+                    ✨ Nasi Uduk 88 Brebes ✨
 
-                    Selamat datang di Nasi Uduk 88 Brebes, tempat di mana cita rasa khas Nusantara berpadu dalam setiap
-                    suapan. 🌿🍚 Dengan aroma harum santan yang menggoda, nasi uduk kami disajikan dengan aneka lauk
-                    pilihan, mulai dari ayam goreng krispi, tempe orek manis, hingga sambal pedas yang bikin nagih! 🔥😋
+                    Selamat datang di Nasi Uduk 88 Brebes! 🌿🍚 Nikmati aroma harum nasi uduk dengan aneka lauk pilihan
+                    seperti ayam goreng krispi, tempe orek manis, dan sambal pedas. 🔥😋
 
-                    Kami menghadirkan pengalaman kuliner yang autentik, menggunakan bahan-bahan segar dan bumbu rempah
-                    pilihan. Setiap hidangan dibuat dengan penuh cinta dan kehangatan, memberikan rasa yang tidak hanya
-                    lezat tetapi juga penuh kenangan. 💛
+                    Kami menyajikan hidangan autentik dengan bahan segar dan bumbu pilihan, dibuat dengan cinta untuk
+                    menghadirkan rasa lezat dan penuh kenangan. 💛
 
                 </p>
                 <p class="mt-4 text-lg text-gray-600 leading-relaxed">
@@ -132,14 +132,15 @@
                     Mari nikmati kelezatan Nasi Uduk 88 Brebes – karena setiap gigitan adalah cerita tentang kehangatan
                     dan kebersamaan! 🍽️✨
                     <br>
+                    <br>
                     #AuthenticTaste #NasiUduk88Brebes #LezatnyaTakTerlupakan
                 </p>
             </div>
 
             <!-- Gambar di Kanan -->
-            <div class=" md:w-1/3">
+            <div class=" md:w-1/3 flex justify-center ">
                 <img src="./img/Logo_waifu2x_art_noise1.png" alt="Image representing our about us section"
-                    class="w-full h-auto rounded-lg shadow-lg" />
+                    class="w-2/3  h-auto rounded-full shadow-lg mt-12" />
             </div>
         </section>
 
@@ -231,9 +232,11 @@
                     <!-- Menu -->
                     <div class="relative flex items-center justify-center">
                         <!-- Tombol Geser Kiri -->
-                        <button id="scrollLeft" class="absolute left-0  ">
-                            <i class='bx bxs-caret-left-circle text-4xl'></i>
+                        <button id="scrollLeft"
+                            class="absolute left-0 bg-black bg-opacity-70 text-white rounded-full p-1.5 hover:bg-opacity-80 w-10 h-10 flex items-center justify-center">
+                            <i class='bx bxs-chevron-left text-xl'></i>
                         </button>
+
                         <!-- Kontainer Utama -->
                         <div class="container mx-auto p-4">
                             <div id="scrollContainer" class="flex overflow-x-auto space-x-4">
@@ -248,8 +251,10 @@
                                     </div>
                                     <div class="relative p-4">
                                         <!-- Tombol untuk membuka sidebar -->
-                                        <button id="toggleSidebar"
-                                            class="absolute bottom-2 right-2 bg-yellow-500 text-white rounded-full p-2 hover:bg-yellow-600 hover:animate-bounce transition duration-300">
+                                        <!-- -->
+                                        <button onclick="openModal()"
+                                            class="absolute bottom-2 right-2 bg-yellow-500 text-white rounded-full p-2 hover:bg-yellow-600 ">
+                                            <!-- hover:animate-bounce transition duration-300 -->
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                                 viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -277,7 +282,8 @@
                                                     <!-- Contoh Produk -->
                                                     <div
                                                         class="p-4 bg-white flex items-center w-full border rounded-lg">
-                                                        <img src="img/ayam.png" alt="Product" class="h-20 w-20 mr-5 rounded">
+                                                        <img src="img/ayam.png" alt="Product"
+                                                            class="h-20 w-20 mr-5 rounded">
                                                         <div class="flex-1">
                                                             <h2 class="font-semibold">Nama Produk</h2>
                                                             <div class="text-gray-500">Harga: <span
@@ -296,24 +302,9 @@
                                                             <i class='bx bx-trash'></i>
                                                         </button>
                                                     </div>
-
-                                                    
                                                     <!-- Tambahkan produk lainnya di sini -->
                                                 </div>
-                                                 <script>
-                                                    function incrementValue(button) {
-                                                        const input = button.parentNode.querySelector('input[type="number"]');
-                                                        input.value = parseInt(input.value) + 1;
-                                                    }
 
-                                                    function decrementValue(button) {
-                                                        const input = button.parentNode.querySelector('input[type="number"]');
-                                                        // Pastikan nilai tidak kurang dari nilai minimum
-                                                        if (parseInt(input.value) > parseInt(input.min)) {
-                                                            input.value = parseInt(input.value) - 1;
-                                                        }
-                                                    }
-                                                </script>
                                             </div>
 
                                             <!-- Footer Checkout (Fixed di bawah) -->
@@ -342,29 +333,42 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <script>
-                                            const toggleSidebar = document.getElementById('toggleSidebar');
-                                            const closeSidebar = document.getElementById('closeSidebar');
-                                            const sidebar = document.getElementById('sidebar');
 
-                                            // Logika untuk membuka sidebar
-                                            toggleSidebar.addEventListener('click', () => {
-                                                sidebar.classList.remove('translate-x-full');
-                                            });
-
-                                            // Logika untuk menutup sidebar
-                                            closeSidebar.addEventListener('click', () => {
-                                                sidebar.classList.add('translate-x-full');
-                                            });
-                                        </script>
                                     </div>
                                 </div>
-
+                                <!-- Tambahkan produk lainnya di sini -->
                             </div>
+                            <!-- Modal -->
+                            <div id="modal"
+                                class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex justify-center items-center z-50">
+                                <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+                                    <h2 class="text-xl font-semibold">Konfirmasi Pesanan</h2>
+                                    <p class="text-gray-600 mt-2">Apakah Anda ingin menambahkan menu ini ke keranjang?
+                                    </p>
+                                    <div class="mt-4 flex justify-end space-x-4">
+                                        <button onclick="closeModal()"
+                                            class="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400">Batal</button>
+                                        <button class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+                                            id="toggleSidebar">Tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                function openModal() {
+                                    document.getElementById("modal").classList.remove("hidden");
+                                }
+                                function closeModal() {
+                                    document.getElementById("modal").classList.add("hidden");
+                                }
+                            </script>
                         </div>
+
+
                         <!-- Tombol Geser Kanan -->
-                        <button id="scrollRight" class="absolute right-0  ">
-                            <i class='bx bxs-caret-right-circle text-4xl'></i>
+                        <button id="scrollRight"
+                            class="absolute right-0 bg-black bg-opacity-70 text-white rounded-full p-1.5 hover:bg-opacity-80 w-10 h-10 flex items-center justify-center">
+                            <i class='bx bxs-chevron-right text-xl'></i>
                         </button>
                     </div>
                 </div>
@@ -375,7 +379,7 @@
 
 
     <!-- footer -->
-    <footer class="bg-gray-900 text-white py-10 w-full">
+    <footer class="bg-gray-900 text-white py-10 w-full" id="kontak">
         <div class="w-full px-6 py-12">
             <!-- Grid Container -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -448,6 +452,35 @@
     </footer>
 
     <script>
+        // penambahan dan pengurangan jumlah item
+        function incrementValue(button) {
+            const input = button.parentNode.querySelector('input[type="number"]');
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decrementValue(button) {
+            const input = button.parentNode.querySelector('input[type="number"]');
+            // Pastikan nilai tidak kurang dari nilai minimum
+            if (parseInt(input.value) > parseInt(input.min)) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+
+        // sidebar keranjang
+        const toggleSidebar = document.getElementById('toggleSidebar');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const sidebar = document.getElementById('sidebar');
+
+        // Logika untuk membuka sidebar
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.remove('translate-x-full');
+        });
+
+        // Logika untuk menutup sidebar
+        closeSidebar.addEventListener('click', () => {
+            sidebar.classList.add('translate-x-full');
+        });
+
         // Ambil elemen yang dibutuhkan
         const scrollContainer = document.getElementById('scrollContainer');
         const scrollLeftButton = document.getElementById('scrollLeft');
